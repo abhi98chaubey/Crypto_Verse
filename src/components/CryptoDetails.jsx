@@ -20,9 +20,9 @@ const CryptoDetails = () => {
   const { data: coinHistory, isLoading, isError, error } = useGetCryptoHistoryQuery({ coinId, timeperiod });
 
   useEffect(() => {
-    console.log('coinHistory:', coinHistory);
-    console.log('isLoading:', isLoading);
-    console.log('isError:', isError);
+    // console.log('coinHistory:', coinHistory);
+    // console.log('isLoading:', isLoading);
+    // console.log('isError:', isError);
     if (isError) {
       console.error('Error fetching historical data:', error);
     }
